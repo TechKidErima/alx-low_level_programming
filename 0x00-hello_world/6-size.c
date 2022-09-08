@@ -7,7 +7,7 @@
  * this program prints "Programming is like building a multilingual puzzle
  * Return: 0
  */
-int main(void)
+int main(voi)
 {
 	char c;
 	int i;
@@ -22,3 +22,4 @@ int main(void)
 	printf("Size of a float: %ld byte(s)\n", sizeof(f));
 	return (0);
 }
+
