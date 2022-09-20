@@ -4,7 +4,7 @@
  * _atoi - convet string to interger
  * @s: pointer to a character
  *
- * Return void
+ * Return: void
  */
 
 int _atoi(char *s)
