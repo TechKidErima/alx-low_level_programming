@@ -1,10 +1,9 @@
 #include "main.h"
-
 /**
  * reverse string
- * @5 the string to be modfied
+ * @s: the string to be modfied
  *
- * Return void
+ * Return: void
  */
 
 void rev_string(char *s)
