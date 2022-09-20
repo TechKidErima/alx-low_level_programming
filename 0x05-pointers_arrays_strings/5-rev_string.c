@@ -7,14 +7,24 @@
  * Return void
  */
 
-void print_rev( *s)
+void rev_string(char *s)
 {
-	int i = 0;
+	int i, j, k, temp;
 
+	i=0;
 	while(s[i] != '\0')
+	{
 		i++;
-	for (i = i -1; i>= 0; i--)
-		_putchar(s[i]);
+	}
+	k = 0;
+	j = i - 1;
 
-	_putchar('\n');
+	while (k < j)
+	{
+		temp = s[k];
+		s[k] = s[j];
+		s[j] = temp;
+		k++;
+		j--;
+	}
 }
