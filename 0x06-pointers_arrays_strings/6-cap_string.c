@@ -20,7 +20,9 @@ char *cap_string(char *str)
 			str[index] -= 32;
 
 		index++;
+
 	}
 
 	return (str);
+
 }
