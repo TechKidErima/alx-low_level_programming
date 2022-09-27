@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stddef.h>
+
 /**
  * _strstr  - locates a string
  * @haystack: string to be examined
@@ -8,21 +10,21 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	char *str1, *str2;
+	int point;
 
-	while(*haystack != '\0')
+	for (; *haystack; haystack++)
 	{
-		str1 = haystack;
-		str2 = needle;
-
-		while(*haystack != '\0' && *str2 != '\0' && *haystack == *str2)
+		for (point = 0; needle[point]; point++)
 		{
-			haystack++;
-			str2++;
+			if (!(*(haystack + point)))
+			{
+				return (NULL);
+			}
+			if (*(haystack + point) != needle[point])
+				break;
 		}
-		if(*str2 == '\0')
-			return(str1);
-		haystack = str1 + 1;
+		if (needle[point] == '\0')
+			return (haystack);
 	}
-	retrun(0);
+	return (NULL);
 }
