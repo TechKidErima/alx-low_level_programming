@@ -2,9 +2,8 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
-
 /**
- * check_num - check - string there are digit
+ * check_num - adds two numbers
  * @str: array str
  *
  * Return: Always 0 (Success)
@@ -20,8 +19,8 @@ int check_num(char *str)
 		{
 			return (0);
 		}
+
 		count++;
 	}
-
 	return (1);
 }
