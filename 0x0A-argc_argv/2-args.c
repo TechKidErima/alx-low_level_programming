@@ -1,13 +1,11 @@
 #include <stdio.h>
-#include <main.h>
-#include <stdlib.h>
+
 /**
- * main - prints all arguments passed to it
+ * main: program that prints all arguments it receives.
+ * @argc: Count arguments
+ * @argv: Arguments
  *
- * @argc: arguments count
- * @argv: arrays of arguments as strings
- *
- * Return: void;
+ * Return: Always 0 (Success)
  */
 int main(int argc, char *argv[])
 {
@@ -18,8 +16,10 @@ int main(int argc, char *argv[])
 		while (count < argc)
 		{
 			printf("%s\n", argv[count]);
+			count++;
 		}
 	}
-	
+
 	return (0);
 }
+
