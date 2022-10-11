@@ -6,11 +6,11 @@
  * print_dog - prints a struct dog
  * @d: struct dog
  *
- * return: 0;
+ * return: void
  */
 void print_dog(struct dog *d);
 {
-	if (d != NULL)
+	if (d == NULL)
 		return;
 	if (d->name == NULL)
 		printf("Name: (nil)\n");
