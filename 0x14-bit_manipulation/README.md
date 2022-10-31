@@ -1,1 +1,1 @@
-The directory contains files for bit manipulation
+The directory contains files for bit manipulation project of the ALX program
